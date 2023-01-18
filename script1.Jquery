@@ -1,0 +1,13 @@
+
+$(document).ready(function(){
+    var altura = $('.header_nav').offset().top;
+    
+    $(window).on('scroll', function(){
+        if ( $(window).scrollTop() > altura ){
+            $('.header_nav').addClass('menu-fixed');
+        } else {
+            $('.header_nav').removeClass('menu-fixed');
+        }
+    });
+
+});
